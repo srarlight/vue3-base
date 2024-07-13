@@ -12,7 +12,7 @@
       "jsxImportSource": "vue",
       "allowSyntheticDefaultImports": true,
   
-      "moduleResolution": "bundler",
+      "moduleResolution": "node",
       "esModuleInterop": true,
       "resolveJsonModule": true,
   

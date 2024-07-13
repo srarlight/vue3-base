@@ -1,7 +1,7 @@
 {
-  "name": "@starlight/test",
+  "name": "@starlight/h5-ui",
   "version": "0.2.0",
-  "description": "this is a test package",
+  "description": "this is a h5-ui package",
   "main": "./src/index.ts",
   "module": "./src/index.ts",
   

@@ -1,0 +1,188 @@
+:root {
+    --vts-license-plate-button-width: 40px;
+    --vts-license-plate-button-height: 40px;
+    --vts-license-plate-button-radius: 4px;
+    --vts-license-plate-button-font-size: 17px;
+    --vts-license-plate-button-active-bg: #d7d7db;
+    --vts-license-plate-panel-bg-color: #efefef;
+    --vts-license-plate-panel-padding: 15px 10px;
+  }
+  
+  .vts-plate-num-popup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .vts-plate-num-box {
+    display: flex;
+    background: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    height: 82px;
+    padding: 21px 10px 17px 10px;
+    box-sizing: border-box;
+  
+    .vts-flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .vts-plate-num-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      font-size: 18px;
+      height: 42px;
+      font-weight: bold;
+      flex: 0 0 38px; /* 固定宽度 */
+      color: #333333;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border-radius: var(--vts-license-plate-button-radius);
+      background-clip: padding-box;
+  
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+  
+      &.vts-plate-focus {
+        background: #f1f0fe;
+        border: 1px solid #7972fe;
+        outline: none;
+      }
+    }
+  
+    .vts-hairline {
+      position: relative;
+      border: 1px solid #d7d7db;
+    }
+  
+    .vts-plate-placeholder {
+      border: 1px dashed #d7d7db;
+      background: #f5f5f5;
+  
+      &::after {
+        content: '新能源';
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: bold;
+        color: #6e6d72;
+        height: 100%;
+        box-sizing: border-box;
+      }
+    }
+  
+    .vts-dot_image {
+      width: 6px;
+      height: 6px;
+      object-fit: cover;
+      margin: 0 6px;
+    }
+  }
+  .vts-input-box {
+    width: 100%;
+    background-color: var(--vts-license-plate-panel-bg-color);
+    padding: var(--vts-license-plate-panel-padding);
+  
+    .vts-province-box,
+    .vts-alphanumeric-box {
+      width: 100%;
+      height: 236px;
+      .vts-plate-num-button-row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 6px;
+        &:last-child {
+          margin-bottom: 0;
+          // padding: 0 10px;
+        }
+  
+        .vts-plate-num-button {
+          width: var(--vts-license-plate-button-width);
+          height: var(--vts-license-plate-button-height);
+          border-radius: var(--vts-license-plate-button-radius);
+          opacity: 1;
+          font-family: Helvetica;
+          font-size: var(--vts-license-plate-button-font-size);
+          text-align: center;
+          background: white;
+          color: #333333;
+          margin-right: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          &:active {
+            background-color: var(--vts-license-plate-button-active-bg);
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+  
+        // .vts-plate-num-button-active {
+        //   border-radius: 4px;
+        //   /* 中性色/线框按钮#D7D7DB */
+        //   background: #d7d7db;
+        // }
+      }
+    }
+    .vts-province-box {
+      .vts-plate-num-button-row {
+        .vts-plate-num-button {
+          width: 46px;
+          height: 40px;
+        }
+      }
+    }
+    .vts-panel-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .vts-panel-footer-right {
+        display: flex;
+        align-items: center;
+      }
+      .vts-cancel,
+      .vts-delete,
+      .vts-finish {
+        width: 63px;
+        height: 40px;
+        border-radius: var(--vts-license-plate-button-radius);
+        opacity: 1;
+        font-size: var(--vts-license-plate-button-font-size);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .vts-cancel {
+        background: #ffffff;
+  
+        color: #333333;
+      }
+      .vts-delete {
+        background: #ffffff;
+  
+        color: #ff706d;
+        margin-right: 6px;
+      }
+      .vts-finish {
+        background: #7972fe;
+        color: #ffffff;
+      }
+    }
+  }
+  
+  .vts-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

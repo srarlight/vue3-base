@@ -1,23 +1,24 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import {Button} from '@starlight/test'
+import {VtsLicensePlateNumber} from '@starlight/h5-ui'
+import { ref } from 'vue';
+const show = ref(false)
+const plateNum = ref('222')
+const showLicensePlateNumber = ()=>{
+  show.value = true
+}
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+      <Button @click="showLicensePlateNumber">222222222222222</Button>
+      <VtsLicensePlateNumber v-model:show="show" v-model="plateNum"></VtsLicensePlateNumber>
     </div>
   </header>
 
-  <RouterView />
 </template>
 
 <style scoped>
