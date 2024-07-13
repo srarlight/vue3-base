@@ -1,4 +1,4 @@
-import h5Ui from './components'
+import Test from './components'
 export * from './components'
 
-export default h5Ui
+export default Test

@@ -1,6 +1,6 @@
 import type { App } from 'vue'
 
-
+export * from './button'
 const modules: Record<string, any> = import.meta.glob('./*/index.ts', {
   eager: true,
 })
