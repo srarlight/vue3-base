@@ -1,0 +1,21 @@
+{
+  "name": "@starlight/test",
+  "version": "0.2.0",
+  "description": "this is a shared package",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "publishX": "npm run build && node ./scripts/publish.mjs"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "dependencies": {
+    "vant": "^4.6.8"
+  },
+  "devDependencies": {
+   
+  }
+}

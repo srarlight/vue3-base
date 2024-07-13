@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.history
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+/deploy/docs
+/.gitmodules
+/deploy/docs
+/node_modules
+/packages/*/node_modules
+docs/.vitepress/cache
+/packages/web-vts-app-h5/stats.html
+/packages/web-vts-bq-h5/stats.html
+/packages/web-vts-app-h5/dist
+/docs/.vitepress/cache
+/docs/node_modules
+vite.config.ts.timestamp-*

@@ -1,0 +1,10 @@
+node_modules
+dist
+pnpm-lock.yaml
+docs/components.d.ts
+docs/.vitepress/i18n/*
+docs/.vitepress/crowdin/*
+!docs/.vitepress/crowdin/en-US
+!.*
+packages/shared/**/__tests__/**,
+packages/vite-config/lib/**",
